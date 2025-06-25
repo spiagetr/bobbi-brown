@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM Parcial 2 - Proyecto Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+
+    <header>
+    
+      <nav class="navbar navbar-expand-lg" style="background-color: #000000;" data-bs-theme="dark">
+        <div class="container-fluid m-3">
+          <h1>
+            <a class="navbar-brand" href="/">Bobbi Brown</a>
+          </h1>    
+
+          <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menuprincipal"
+              aria-controls="menuprincipal" aria-expanded="false"
+              aria-label="Menu Principal">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+              <div class="collapse navbar-collapse" id="menuprincipal">
+                <ul class="navbar-nav text-center ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="#sobrenosotros">Sobre nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#nuestrosproductos">Nuestros productos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#ingredientes">Nuestros ingredientes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link d-flex justify-content-center" href="#" data-bs-toggle="modal" data-bs-target="#modalAlumna">
+                      <i class="bi bi-person-circle fs-4"></i>
+                    </a>
+                  </li>                  
+                  
+                </ul>
+              </div>
+            </div>
+
+
+              <!-- Modal Alumna-->
+               
+                <div class="modal fade" id="modalAlumna" tabindex="-1" aria-labelledby="tituloModalAlumna" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h2 class="modal-title fs-4" id="tituloModalAlumna">Datos de la Alumna</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                      </div>
+
+                      <div class="modal-body">
+                      <figure>
+                        <img src="img/SolennePiaget.jpg" alt="Foto Perfil Alumna" class="img-fluid rounded-circle">
+                      </figure>
+                      
+                        <div id="datosAlumna">
+                          <ul>
+                            <li>Solenne Piaget</li>
+                            <li>26/08/1997 (27 años)</li>
+                            <li><a href="mailto:solenne.piaget@davinci.edu.ar">solenne.piaget@davinci.edu.ar</a></li>
+                          </ul>
+                          <ul class="redes-sociales">
+                            <li><a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="https://www.whatsapp.com" aria-label="Whatsapp" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                            <li><a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </nav>
+
+    </header>
+    
+
+
+    <main>
+
+        <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <picture>
+                <source media="(min-width: 577px)" srcset="img/header-1-desktop.jpg">
+                <img class="d-block w-100 img-fluid c-img" src="img/header-1-mobile.jpg" alt="Banner con logo y productos de la marca.">
+              </picture>
+            </div>
+
+            <div class="carousel-item">
+              <picture>
+                <source media="(min-width: 577px)" srcset="img/header-2-desktop.jpg">
+                <img class="d-block w-100 img-fluid c-img" src="img/header-2-mobile.jpg" alt="Banner con logo y productos de la marca.">
+              </picture>
+            </div>
+
+            <div class="carousel-item">
+              <picture>
+                <source media="(min-width: 577px)" srcset="img/header-3-desktop.jpg">
+                <img class="d-block w-100 img-fluid c-img" src="img/header-3-mobile.jpg" alt="Banner con logo y productos de la marca.">
+              </picture>
+            </div>
+          </div>
+        </div>
+    
+
+<!-- Sobre nosotros -->
+
+      <section class="container-md py-5" id="sobrenosotros">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-6 col-lg-7">
+            <h2>Sobre nosotros</h2>
+            <p>Bobbi Brown nació de una visión simple pero revolucionaria: que la belleza debe realzar lo que ya somos, no transformarnos.
+            Fundada por la reconocida maquilladora del mismo nombre, la marca redefinió el maquillaje con una propuesta natural, elegante y moderna.
+            Desde sus inicios, Bobbi Brown se ha centrado en realzar la belleza individual, no en cubrirla.</p>
+            <p>Nuestra filosofía es clara: el maquillaje debe ser fácil, rápido y real. Creemos en el poder de una piel luminosa, de labios con intención y miradas que transmiten confianza.
+            Cada uno de nuestros productos está pensado para acompañarte en tu rutina diaria y ayudarte a sentirte bien en tu propia piel.</p>
+          </div>
+
+          <picture class="col-12 col-sm-6 col-lg-5">
+            <source media="(min-width: 992px)" srcset="img/BobbiBrown.jpg">
+            <source media="(min-width: 768px)" srcset="img/BobbiBrown-tablet.jpg">
+            <img src="img/BobbiBrown-mobile.jpg" alt="Foto de Bobbi Brown" class="w-100 rounded-5">
+          </picture>
+        </div>
+      </section>
+
+<!-- Nuestros productos -->
+
+      <section class="py-5 text-bg-dark" id="nuestrosproductos">
+        <article class="container">
+        <div class="row flex-row-reverse align-items-center">
+          <div class="col-12 col-sm-6 col-lg-7">
+            <h2>Nuestros productos</h2>
+            <p>Ofrecemos maquillaje para el rostro, incluyendo bases, correctores, polvos y rubores que se funden con la piel para un acabado impecable. Nuestra línea para ojos incluye sombras, delineadores y máscaras que definen y resaltan la mirada. También contamos con labiales y brillos en una amplia variedad de tonos, con fórmulas hidratantes y de larga duración.
+              Además, desarrollamos productos de cuidado de la piel como limpiadores, hidratantes y sérums que preparan y protegen la piel antes y después del maquillaje. Completan nuestra oferta las ediciones limitadas y sets exclusivos, ideales para regalar o para darte un gusto.</p>
+          </div>
+
+          <picture class="col-12 col-sm-6 col-lg-5">
+            <source media="(min-width: 992px)" srcset="img/productos-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/productos-tablet.png">
+            <img src="img/productos.png" alt="Foto de Productos" class="w-100 rounded-5">
+          </picture>
+        </div>
+      </article>
+      </section>
+
+<!-- Cards de productos -->
+
+      <section class="container-md py-5">
+        <h2 class="d-none">Productos</h2>
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <div class="col">
+            <article class="card h-100 text-center text-bg-dark rounded-5">
+              <picture>
+                <source media="(min-width: 992px)" srcset="img/lwcss-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/lwcss-tablet.png">
+                <img src="img/lwcss.png" class="card-img-top" alt="Foto de la Sombra de Ojos">
+              </picture>
+              <div class="card-body">
+                <h3 class="card-title">Sombra de Ojos</h3>
+                <p class="card-text">Nuestra sombra de ojos en crema se desliza con facilidad y tiene una duración de 24 horas. Prepara, delinea, define e ilumina con colores fáciles de modular y difuminar para lograr un look de ojos instantáneo y sencillo.</p>
+                <p class="fs-3">$35000</p>
+                <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalProducto">Agregar al carrito</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 text-center text-bg-dark rounded-5">
+              <picture>
+                <source media="(min-width: 992px)" srcset="img/foundation-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/foundation-tablet.png">
+                <img src="img/foundation.png" class="card-img-top" alt="Foto de la Base">
+              </picture>
+              <div class="card-body">
+                <h3 class="card-title">Base de Maquillaje</h3>
+                <p class="card-text">Esta base de maquillaje con tratamiento proporciona un aspecto revitalizante y radiante al instante y a lo largo del tiempo. La cobertura modulable, que perfecciona el tono, proporciona a la piel un acabado natural que dura hasta 12 horas.</p>
+                <p class="fs-3">$53000</p>
+                <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalProducto">Agregar al carrito</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 text-center text-bg-dark rounded-5">
+              <picture>
+                <source media="(min-width: 992px)" srcset="img/mascara-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/mascara-tablet.png">
+                <img src="img/mascara.png" class="card-img-top" alt="Foto del Rimel">
+              </picture>
+              <div class="card-body">
+                <h3 class="card-title">Rimel</h3>
+                <p class="card-text">Consigue unas pestañas voluminosas en un instante con esta fórmula. Es el complemento ideal para cualquier maquillaje de ojos. Además, esta máscara de larga duración no se descama y es resistente al sudor y la humedad.</p>
+                <p class="fs-3">$30000</p>
+                <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalProducto">Agregar al carrito</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 text-center text-bg-dark rounded-5">
+              <picture>
+                <source media="(min-width: 992px)" srcset="img/lipserum-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/lipserum-tablet.png">
+                <img src="img/lipserum.png" class="card-img-top" alt="Foto del Suero Labial">
+              </picture>
+              <div class="card-body">
+                <h3 class="card-title">Suero Labial</h3>
+                <p class="card-text">Nuestro nuevo Serum Labial Extra Plump ofrece la mezcla de seis aceites botánicos y un extra de volumen. Gracias a nuestro exclusivo Complejo Extra Plump, este acondicionador y voluminizador de labios proporciona una hidratación instantánea durante 24 horas y un brillo durante 8 horas.</p>
+                <p class="fs-3">$28000</p>
+                <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalProducto">Agregar al carrito</a>
+              </div>
+            </article>            
+          </div>
+
+          <div class="col">
+            <article class="card h-100 text-center text-bg-dark rounded-5">
+              <picture>
+                <source media="(min-width: 992px)" srcset="img/bronzingpowder-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/bronzingpowder-tablet.png">
+                <img src="img/bronzingpowder.png" class="card-img-top" alt="Foto del Polvo Bronceador">
+              </picture>
+              <div class="card-body">
+                <h3 class="card-title">Polvo Bronceador</h3>
+                <p class="card-text">Estos polvos bronceadores ligeros con un acabado suave y mate es el secreto para conseguir un look efecto buena cara durante todo el año (o en cualquier momento que quieras obtener un look de acabado bronceado).</p>
+                <p class="fs-3">$42000</p>
+                <a href="modalProducto" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalProducto">Agregar al carrito</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 text-center text-bg-dark rounded-5">
+              <picture>
+                <source media="(min-width: 992px)" srcset="img/highlighter-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/highlighter-tablet.png">
+                <img src="img/highlighter.png" class="card-img-top" alt="Illuminador">
+              </picture>
+              <div class="card-body">
+                <h3 class="card-title">Iluminador</h3>
+                <p class="card-text">Perfeccionado con pigmentos perlados, nuestro iluminador número 1 fusiona los beneficios de un gel y un polvo para conseguir un rostro luminoso.</p>
+                <p class="fs-3">$56000</p>
+                <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalProducto">Agregar al carrito</a>
+              </div>
+            </article>
+          </div>
+      </div>
+
+
+    <!-- Modal Productos-->
+
+    <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProducto" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light rounded-4 shadow-lg border-0">
+          <div class="modal-header border-secondary">
+            <h1 class="modal-title fs-5" id="modalProductoTitulo">¡Producto agregado!</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body text-center py-4">
+            <p class="fs-6 mb-0">Tu producto fue añadido al carrito con éxito!</p>
+          </div>
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Seguir comprando</button>
+            <a href="#" class="btn btn-secondary">Ir al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Nuestros ingredientes (accordion)-->
+
+      <section class="py-5 text-bg-dark text-center" id="ingredientes">
+        <article class="container-md">
+        <h2>Nuestros ingredientes</h2>
+          
+        <p class="w-75 mx-auto py-3">Nos proveemos de ingredientes para la piel que la mantienen fresca y radiante desde vitaminas y minerales para potenciar los poderes botánicos, aceites, extractos y más. Siempre libre de parabenos y aceites minerales, nuestras fórmulas están meticulosamente elaboradas para ser seguras, no irritantes e inflexibles en su rendimiento, su desgaste y su cuidado.</p>
+        
+          <div class="accordion w-75 mx-auto" id="accordionIngredientes">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rosaMosqueta" aria-expanded="false" aria-controls="rosaMosqueta">
+                  Semilla de rosa mosqueta
+                </button>
+              </h2>
+              <div id="rosaMosqueta" class="accordion-collapse collapse row my-3 align-items-center">
+                <div class="accordion-body col-12 col-lg-7 order-2 order-lg-2">
+                  <ul class="list-unstyled">
+                    <li><span class="fw-bold">En una palabra:</span> Fortalecimiento.</li>
+                    <li><span class="fw-bold">Procedente de:</span> Las semillas detrás de los pétalos de rosa.</li>
+                    <li><span class="fw-bold">Por qué a la piel le encanta:</span>  Con Omegas 3, 6, 9, más las vitaminas A, C y E, ayuda a la piel a retener el equilibrio natural fortaleciendo la barrera protectora de la piel.</li>
+                  </ul>
+                </div>
+                <picture class="col-12 col-lg-5 order-1 order-lg-1">
+                  <source media="(min-width: 768px)" srcset="img/rosamosqueta.jpg">
+                  <img src="img/rosamosqueta-mobile.jpg" alt="Foto de Rosa Mosqueta" class="rounded-5">
+                </picture>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bambu" aria-expanded="false" aria-controls="bambu">
+                  Bambú
+                </button>
+              </h2>
+              <div id="bambu" class="accordion-collapse collapse row my-3 align-items-center">
+                <div class="accordion-body col-12 col-lg-7 order-2 order-lg-2">
+                  <ul class="list-unstyled">
+                    <li><span class="fw-bold">En una palabra:</span> Calmante.</li>
+                    <li><span class="fw-bold">Procedente de:</span> Bambú de Chishima Zasa.</li>
+                    <li><span class="fw-bold">Por qué a la piel le encanta:</span> Ayuda a calmar de manera sostenible la irritación visible y reducir el enrojecimiento.</li>
+                  </ul>
+                </div>
+                <picture class="col-12 col-lg-5 order-1 order-lg-1">
+                  <source media="(min-width: 768px)" srcset="img/bambu.jpg">
+                  <img src="img/bambu-mobile.jpg" alt="Foto de Bambu" class="w-75 rounded-5">
+                </picture>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aceiteCoco" aria-expanded="false" aria-controls="aceiteCoco">
+                  Aceite de Coco
+                </button>
+              </h2>
+              <div id="aceiteCoco" class="accordion-collapse collapse row my-3 align-items-center">
+                <div class="accordion-body col-12 col-lg-7 order-2 order-lg-2">
+                  <ul class="list-unstyled">
+                    <li><span class="fw-bold">En una palabra:</span> Nutritivo.</li>
+                    <li><span class="fw-bold">Procedente de:</span> Árbol de nuez Kukui.</li>
+                    <li><span class="fw-bold">Por qué a la piel le encanta:</span> Los ácidos grasos omega 3 y 6 ayudan a retener los niveles de humedad de la piel para una piel radiante.</li>
+                  </ul>
+                </div>
+                <picture class="col-12 col-lg-5 order-1 order-lg-1">
+                  <source media="(min-width: 768px)" srcset="img/aceiteCoco.jpg">
+                  <img src="img/aceiteCoco-mobile.jpg" alt="Foto de Aceite de Coco" class="w-75 rounded-5">
+                </picture>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aceiteArgan" aria-expanded="false" aria-controls="rosaMosqueta">
+                  Aceite de Argán
+                </button>
+              </h2>
+              <div id="aceiteArgan" class="accordion-collapse collapse row my-3 align-items-center">
+                <div class="accordion-body col-12 col-lg-7 order-2 order-lg-2">
+                  <ul class="list-unstyled">
+                    <li><span class="fw-bold">En una palabra:</span> Protector.</li>
+                    <li><span class="fw-bold">Procedente de:</span> El fruto del árbol nativo de Argán de Marruecos.</li>
+                    <li><span class="fw-bold">Por qué a la piel le encanta:</span> La vitamina E, los fenoles, los carotenos y los ácidos grasos ayudan a fortalecer la barrera protectora de la piel.</li>
+                  </ul>
+                </div>
+                <picture class="col-12 col-lg-5 order-1 order-lg-1">
+                  <source media="(min-width: 768px)" srcset="img/aceiteArgan.jpg">
+                  <img src="img/aceiteArgan-mobile.jpg" alt="Foto de Aceite de Argan" class="w-75 rounded-5">
+                </picture>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mantecaShea" aria-expanded="false" aria-controls="rosaMosqueta">
+                  Manteca de Shea
+                </button>
+              </h2>
+              <div id="mantecaShea" class="accordion-collapse collapse row my-3 align-items-center">
+                <div class="accordion-body col-12 col-lg-7 order-2 order-lg-2">
+                  <ul class="list-unstyled">
+                    <li><span class="fw-bold">En una palabra:</span> Calmante.</li>
+                    <li><span class="fw-bold">Procedente de:</span> Bambú de Chishima Zasa.</li>
+                    <li><span class="fw-bold">Por qué a la piel le encanta:</span> Ayuda a calmar de manera sostenible la irritación visible y reducir el enrojecimiento.</li>
+                  </ul>
+                </div>
+                <picture class="col-12 col-lg-5 order-1 order-lg-1">
+                  <source media="(min-width: 768px)" srcset="img/mantecaShea.jpg">
+                  <img src="img/mantecaShea-mobile.jpg" alt="Foto de Manteca de Shea" class="w-75 rounded-5">
+                </picture>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#espinoAmarillo" aria-expanded="false" aria-controls="rosaMosqueta">
+                  Espino Amarillo
+                </button>
+              </h2>
+              <div id="espinoAmarillo" class="accordion-collapse collapse row my-3 align-items-center">
+                <div class="accordion-body col-12 col-lg-7 order-2 order-lg-2">
+                  <ul class="list-unstyled">
+                    <li><span class="fw-bold">En una palabra:</span> Calmante.</li>
+                    <li><span class="fw-bold">Procedente de:</span> Las bayas de superfruta del árbol Espino Dorado Marino.</li>
+                    <li><span class="fw-bold">Por qué a la piel le encanta:</span> Ayuda a calmar la irritación y el enrojecimiento visible.</li>
+                  </ul>
+                </div>
+                <picture class="col-12 col-lg-5 order-1 order-lg-1">
+                  <source media="(min-width: 768px)" srcset="img/espinoAmarillo.jpg">
+                  <img src="img/espinoAmarillo-mobile.jpg" alt="Foto de Espino Amarillo" class="w-75 rounded-5">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+<!-- Newsletter (formulario) -->
+
+      <section class="container py-5" id="newsletter">
+        <h2 class="text-center mb-3">Inscribirse a nuestra Newsletter</h2>
+      
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+            <form>
+              <div class="mb-2">
+                <label for="nombre" class="form-label fw-semibold fs-5">Nombre</label>
+                <input type="text" class="form-control text-bg-dark rounded-3" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+              </div>
+              <div class="mb-2">
+                <label for="email" class="form-label fw-semibold fs-5">Correo electrónico</label>
+                <input type="email" class="form-control text-bg-dark rounded-3" id="email" aria-describedby="emailAyuda" name="email" placeholder="Ingrese su correo electrónico">
+                <div id="emailAyuda" class="form-text">nombre@ejemplo.com</div>
+              </div>
+              <div class="mb-2">
+                <label for="telefono" class="form-label fw-semibold fs-5">Teléfono</label>
+                <input type="tel" class="form-control text-bg-dark rounded-3" id="telefono" aria-describedby="telefonoAyuda" name="telefono" placeholder="Ingrese su número de teléfono">
+                <div id="telefonoAyuda" class="form-text">+54(0)3512345678</div>
+              </div>
+              <div class="mb-3">
+                <label for="comentario" class="form-label fw-semibold fs-5">Comentario</label>
+                <textarea class="form-control text-bg-dark rounded-3" id="comentario" name="comentario" rows="4" placeholder="Escriba aquí su comentario (opcional)"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark w-100">Me inscribo!</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+<!-- Footer -->
+
+    <footer class="text-bg-dark">
+      <div class="container">
+        <article class="row pb-4 px-4 px-md-0">
+
+          <div class="col-12 col-md-6 col-lg-4 pt-4">
+            <h3 class="text-uppercase">Necesitas ayuda?</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Envianos un e-mail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Llamanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Envíos y Devoluciones</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-4 pt-4">
+            <h3 class="text-uppercase">Explorá</h3>
+            <ul class="nav flex-column justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#carouselHeader">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#sobrenosotros">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#nuestrosproductos">Nuestros productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#ingredientes">Nuestros ingredientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#newsletter">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="col-12 col-md-12 col-lg-4 pt-4 text-md-center text-lg-start">
+            <h3 class="text-uppercase">Seguínos</h3>
+            <ul class="nav fs-2 d-flex justify-content-md-center justify-content-lg-start">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="https://www.whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="https://www.tiktok.com" target="_blank"><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        
+        </article>
+                
+          <div class="pt-3 border-top text-center">
+              <picture>                
+                <source media="(min-width: 1025px)" srcset="img/logo.png">
+                <source media="(min-width: 768px)" srcset="img/logo-30.png">
+                <img src="img/logo-20.png" alt="Logo de Bobbi Brown">
+              </picture>
+              <p class="fs-6 py-3">Copyright © 2025 - Todos los derechos reservados</p>
+          </div>
+      </div>
+
+  </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
